@@ -13,7 +13,9 @@ Mappings:
     us-east-1:
       RegionShortName: ''
     us-west-1:
-      RegionShortName: 'uw1'
+        RegionShortName: 'uw1'
+      us-east-2:
+        RegionShortName: 'ue2'
 
 Resources:
   ContactDynamoDB:
@@ -21,7 +23,7 @@ Resources:
     DeletionPolicy: Retain
     UpdateReplacePolicy: Retain
     Properties:
-      TableName: contact
+      TableName: contact-diana-lozano
       AttributeDefinitions:
         - AttributeName: "email"
           AttributeType: "S"
@@ -38,7 +40,7 @@ Resources:
   ContactApi:
     Type: AWS::Serverless::Api
     Properties:
-      Name: contact-api
+      Name: contact-api-diana
       EndpointConfiguration: REGIONAL
       StageName: prod
       Cors:
