@@ -14,7 +14,7 @@ Mappings:
       RegionShortName: ''
     us-west-1:
         RegionShortName: 'uw1'
-      us-east-2:
+    us-east-2:
         RegionShortName: 'ue2'
 
 Resources:
